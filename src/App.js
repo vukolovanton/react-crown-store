@@ -6,7 +6,7 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 import Homepage from "./pages/homepage/Homepage";
 import ShopPage from "./pages/shop/Shop";
-import { Header } from "./component/header/header";
+import Header from "./component/header/header";
 import { SignInAndSignUp } from "./pages/sign-in-and-sign-up/sign-in-and-sign-up";
 
 class App extends React.Component {
@@ -50,7 +50,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/shop" component={ShopPage} />
