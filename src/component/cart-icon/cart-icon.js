@@ -7,10 +7,10 @@ import { createStructuredSelector } from "reselect";
 import { ReactComponent as ShoppingIcon } from "../../shopping-bag.svg";
 import "./cart-icon.scss";
 
-const CartIcon = ({ toggleCartHidden, itemCount }) => (
+const CartIcon = ({ toggleCartHidden, itemsCount }) => (
   <div className="cart-icon" onClick={toggleCartHidden}>
     <ShoppingIcon className="shopping-icon" />
-    <span className="item-count">{itemCount}</span>
+    <span className="item-count">{itemsCount}</span>
   </div>
 );
 

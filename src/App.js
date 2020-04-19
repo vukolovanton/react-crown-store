@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import Homepage from "./pages/homepage/Homepage";
 import ShopPage from "./pages/shop/Shop";
 import Header from "./component/header/header";
+import CheckOutPage from "./pages/checkout/checkout";
 import { SignInAndSignUp } from "./pages/sign-in-and-sign-up/sign-in-and-sign-up";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
@@ -44,6 +45,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckOutPage} />
           <Route
             exact
             path="/signin"
